@@ -10,7 +10,7 @@ const PatientForm = ({ onAddPatient }) => {
 
     const patient = { name, age, condition };
     try {
-      const response = await fetch('http://localhost:5000/patients', {
+      const response = await fetch('https://patient-management-qmf4.onrender.com/patients', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

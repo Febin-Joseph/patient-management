@@ -6,7 +6,7 @@ const PatientList = () => {
   useEffect(() => {
     const fetchPatients = async () => {
       try {
-        const response = await fetch('http://localhost:5000/patients');
+        const response = await fetch('https://patient-management-qmf4.onrender.com/patients');
         const data = await response.json();
         setPatients(data);
       } catch (error) {
